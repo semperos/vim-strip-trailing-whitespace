@@ -240,7 +240,7 @@ augroup END
 
 augroup strip_trailing_whitespace_filetype
 	autocmd!
-	autocmd FileType * let b:strip_trailing_whitespace_enabled = index(['diff', 'markdown'],
+	autocmd FileType * let b:strip_trailing_whitespace_enabled = index(['diff', 'markdown', 'tsv'],
 				\ &filetype) == -1
 augroup END
 
